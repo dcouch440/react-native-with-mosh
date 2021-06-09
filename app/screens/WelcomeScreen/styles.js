@@ -16,10 +16,17 @@ export default StyleSheet.create({
     height: 70,
     backgroundColor: '#4ecdc4',
   },
+  logoContainer: {
+    position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center',
+    top: 70,
+  },
   logo: {
     width: 100,
     height: 100,
-    top: 70,
-    position: 'absolute',
+  },
+  logoText: {
+    color: 'white'
   }
 })
