@@ -8,7 +8,8 @@ import {
 } from 'react-native';
 
 export default function App() {
-  console.log(useDimensions());
+  const screen = useDimensions().screen;
+  console.log(screen);
   return (
     <SafeAreaView style={styles.container}>
       {/* number of lines sets max lines */}
