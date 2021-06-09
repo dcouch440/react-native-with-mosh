@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   background: {
     flex: 1,
     justifyContent: 'flex-end',
@@ -30,3 +30,5 @@ export default StyleSheet.create({
     color: 'white'
   }
 })
+
+export default styles;
