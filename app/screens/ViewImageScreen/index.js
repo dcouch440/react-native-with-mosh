@@ -8,6 +8,7 @@ export default function ViewImageScreen () {
       style={styles.container}
     >
       <View style={styles.closeIcon} />
+      <View style={styles.deleteIcon} />
       <Image
         style={styles.image}
         resizeMode="contain"
