@@ -6,9 +6,9 @@ import {
   Platform
 } from 'react-native';
 
-function AppText ({ children }) {
+function AppText ({ children, style = {} }) {
   return (
-    <Text style={styles.text}>{ children }</Text>
+    <Text style={[styles.text, style]}>{ children }</Text>
   )
 }
 // Platform.select({
@@ -16,7 +16,7 @@ function AppText ({ children }) {
 // })
 const styles = StyleSheet.create({
   text: {
-    color: 'tomato',
+    color: 'black',
     fontSize: 20,
     fontFamily: 'Avenir'
   }
