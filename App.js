@@ -1,7 +1,9 @@
 import React from 'react';
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import AppText from './app/components/AppText';
+import AppButton from './app/components/AppButton';
 
 import {
   SafeAreaView,
@@ -12,12 +14,18 @@ import {
   Text
 } from 'react-native';
 
+// ICON EXAMPLE
+{/* <MaterialCommunityIcons name='email' size={60} /> */}
+
+// GLOBAL APP TEXT EXAMPLE
+{/* <AppText>YabaDatadsfg</AppText> */}
+
 export default function App () {
   return (
     <SafeAreaView style={styles.test}>
       {/* <View style={[styles.blueCircle]} /> */}
       <Text style={styles.textExample}>I love React Native</Text>
-      <AppText>YabaDatadsfg</AppText>
+      <AppButton title='Hello' onPress={() => console.log('pressed')}/>
     </SafeAreaView>
     // <WelcomeScreen />
   );
