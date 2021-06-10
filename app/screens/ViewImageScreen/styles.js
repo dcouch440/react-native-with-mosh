@@ -1,4 +1,10 @@
-import { Platform, StatusBar, StyleSheet } from 'react-native';
+import colors from '../../colors';
+
+import {
+  Platform,
+  StatusBar,
+  StyleSheet
+} from 'react-native';
 
 const styles = StyleSheet.create({
   closeIcon: {
@@ -6,7 +12,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 30,
     right: 10,
-    backgroundColor: '#fc5c65',
+    backgroundColor: colors.primary,
     top: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
   deleteIcon: {
@@ -14,12 +20,11 @@ const styles = StyleSheet.create({
     width: 50,
     height: 30,
     left: 10,
-    backgroundColor: '#fc5c65',
+    backgroundColor: colors.secondary,
     top: Platform.OS === 'android' ? StatusBar.currentHeight : 0
-
   },
   container: {
-    backgroundColor: 'black',
+    backgroundColor: colors.black,
     flex: 1
   },
   image: {
