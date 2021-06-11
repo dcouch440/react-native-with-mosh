@@ -10,7 +10,7 @@ import {
   TouchableHighlight
 } from 'react-native'
 
-function ListItem ({ title, subTitle, image, onPress, renderRightActions }) {
+function ListItem ({ title, subTitle, image, IconComponent, onPress, renderRightActions }) {
   return (
     <Swipeable
       renderRightActions={renderRightActions}
@@ -20,10 +20,11 @@ function ListItem ({ title, subTitle, image, onPress, renderRightActions }) {
         onPress={onPress}
       >
         <View style={styles.container}>
-          <Image style={styles.image} source={image}/>
-          <View>
+          { IconComponent }
+          { image && <Image style={styles.image} source={image}/> }
+          <View style={styles.detailsContainer}>
             <AppText style={styles.titleText}>{title}</AppText>
-            <AppText style={styles.subText}>{subTitle}</AppText>
+            { subTitle && <AppText style={styles.subText}>{subTitle}</AppText> }
           </View>
         </View>
       </TouchableHighlight>

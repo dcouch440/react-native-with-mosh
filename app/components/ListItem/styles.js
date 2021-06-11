@@ -4,10 +4,12 @@ import colors from "../../colors";
 const styles = StyleSheet.create({
   container: {
     padding: 15,
-    borderStyle: 'solid',
-    borderColor: 'black',
     flexDirection: 'row',
-    width: '100%',
+    backgroundColor: colors.white
+  },
+  detailsContainer: {
+    paddingLeft: 15,
+    justifyContent: 'center'
   },
   titleText: {
     fontWeight: 'bold'
@@ -21,7 +23,6 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 35,
-    marginRight: 10
   },
 });
 
