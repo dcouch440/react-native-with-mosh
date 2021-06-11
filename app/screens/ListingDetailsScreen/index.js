@@ -16,11 +16,13 @@ export default function ListingDetailsScreen() {
         <AppText style={styles.title}>Red Jacket For Sale</AppText>
         <AppText style={styles.price}>$100</AppText>
       </View>
-      <ListItem
-        image={require('../../assets/skull-cross.png')}
-        title='Carry Armor'
-        subTitle='hello world'
-      />
+      <View style={styles.userContainer}>
+        <ListItem
+          image={require('../../assets/skull-cross.png')}
+          title='Carry Armor'
+          subTitle='hello world'
+        />
+      </View>
     </View>
   );
 }
