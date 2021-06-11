@@ -6,8 +6,10 @@ This project was created for education. This project fallows along with Mosh to 
 
 ### `Tech Used`
 - React Native
+  
 `npm i`
 - expo-constants
 - @react-native-community/hooks
+  
 `expo i`
 - react-native-gesture-handler
