@@ -1,6 +1,6 @@
 import React from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import colors from '../../colors';
+import colors from '../../config/colors';
 import styles from './styles';
 
 import {

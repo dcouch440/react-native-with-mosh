@@ -1,4 +1,4 @@
-import colors from '../../colors';
+import colors from '../../config/colors';
 
 import {
   Platform,

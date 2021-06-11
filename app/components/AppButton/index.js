@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles';
-import colors from '../../colors';
+import colors from '../../config/colors';
 
 import {
   Text,
