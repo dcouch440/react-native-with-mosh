@@ -9,18 +9,12 @@ import {
 const styles = StyleSheet.create({
   closeIcon: {
     position: 'absolute',
-    width: 50,
-    height: 30,
-    right: 10,
-    backgroundColor: colors.primary,
+    left: 10,
     top: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
   deleteIcon: {
     position: 'absolute',
-    width: 50,
-    height: 30,
-    left: 10,
-    backgroundColor: colors.secondary,
+    right: 10,
     top: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
   container: {

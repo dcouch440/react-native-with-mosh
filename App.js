@@ -4,6 +4,7 @@ import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import AppText from './app/components/AppText';
 import AppButton from './app/components/AppButton';
+import Card from './app/components/Card';
 
 import {
   SafeAreaView,
@@ -13,6 +14,9 @@ import {
   Platform,
   Text
 } from 'react-native';
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
+import MessagesScreen from './app/screens/MessagesScreen';
+
 
 // ICON EXAMPLE
 {/* <MaterialCommunityIcons name='email' size={60} /> */}
@@ -20,14 +24,15 @@ import {
 // GLOBAL APP TEXT EXAMPLE
 {/* <AppText>YabaDatadsfg</AppText> */}
 
+// TEXT EXAMPLE WITH LINES
+{/* <Text style={styles.textExample}>I love React Native</Text> */}
+
+
+{/* <ViewImageScreen /> */}
+
 export default function App () {
   return (
-    <SafeAreaView style={styles.test}>
-      {/* <View style={[styles.blueCircle]} /> */}
-      <Text style={styles.textExample}>I love React Native</Text>
-      <AppButton title='Hello' onPress={() => console.log('pressed')}/>
-    </SafeAreaView>
-    // <WelcomeScreen />
+    <MessagesScreen />
   );
 }
 
