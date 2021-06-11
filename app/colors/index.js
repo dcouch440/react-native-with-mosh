@@ -6,7 +6,8 @@ const colors = {
   dimBlack: '#000615',
   offWhite: '#f7f7f7',
   medium: '#6e6969',
-  lightGrey: '#f8f4f4'
+  lightGrey: '#f8f4f4',
+  danger: '#ff5252'
 };
 
 export default colors;
