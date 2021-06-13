@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
-import defaultCategories from './categories';
 import PickerItem from '../PickerItem';
 import styles from './styles';
 import AppText from '../AppText';
@@ -15,7 +14,7 @@ import {
   FlatList
 } from 'react-native';
 
-export default function AppPicker ({ icon, placeholder, items = defaultCategories }) {
+export default function AppPicker ({ icon, placeholder, items, onSelectItem,  selectedItem }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
@@ -30,7 +29,7 @@ export default function AppPicker ({ icon, placeholder, items = defaultCategorie
               style={styles.icon}
             />
           }
-          <AppText style={styles.text}>{ placeholder }</AppText>
+          <AppText style={styles.text}>{ selectedItem ? selectedItem.label : placeholder }</AppText>
           <MaterialCommunityIcons
             name='chevron-down'
             size={20}
@@ -47,7 +46,10 @@ export default function AppPicker ({ icon, placeholder, items = defaultCategorie
           renderItem={({ item }) => (
             <PickerItem
               label={item.label}
-              onPress={() => console.log(item)}
+              onPress={() => {
+                setModalVisible(false)
+                onSelectItem(item)
+              }}
             />
           )}
         />
