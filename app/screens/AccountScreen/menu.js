@@ -1,4 +1,4 @@
-const { default: colors } = require("../../colors");
+const { default: colors } = require("../../config/colors");
 
 const menuItems = [
   {
