@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import AppText from './app/components/AppText';
 import AppButton from './app/components/AppButton';
 import Card from './app/components/Card';
+import AppTextInput from './app/components/AppTextInput';
+import Screen from './app/components/Screen';
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
+import MessagesScreen from './app/screens/MessagesScreen';
+import Icon from './app/components/Icon';
+import ListItem from './app/components/ListItem';
+import AccountScreen from './app/screens/AccountScreen';
+import ListingScreen from './app/screens/ListingScreen';
+import AppPicker from './app/components/AppPicker';
+import LoginScreen from './app/screens/LoginScreen';
 
 import {
+  TextInput,
   SafeAreaView,
   StatusBar,
   StyleSheet,
   View,
   Platform,
-  Text
+  Text,
+  Switch
 } from 'react-native';
-import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
-import MessagesScreen from './app/screens/MessagesScreen';
 
 
 // ICON EXAMPLE
@@ -30,9 +40,32 @@ import MessagesScreen from './app/screens/MessagesScreen';
 
 {/* <ViewImageScreen /> */}
 
+{/* <MessagesScreen /> */}
+
+//  BOOLEAN TOGGLE VALUE
+{/* <Switch value={isNew} onValueChange={newValue => setIsNew(newValue)} /> */}
+
+// const catagories = [
+//   {
+//     label: 'Furniture',
+//     value: 1
+//   },
+//   {
+//     label: 'Chair',
+//     value: 2
+//   },
+//   {
+//     label: 'Apples',
+//     value: 3
+//   },
+// ];
+
+
 export default function App () {
+  // const [category, setCategory] = useState();
+
   return (
-    <MessagesScreen />
+    <LoginScreen />
   );
 }
 
